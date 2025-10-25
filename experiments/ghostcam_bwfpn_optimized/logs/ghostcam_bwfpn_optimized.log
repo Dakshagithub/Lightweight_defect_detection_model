@@ -1,0 +1,472 @@
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO - Training Configuration
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   experiment_name: ghostcam_bwfpn_optimized
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   data_dir: /home/daksha/projects/ghostcam-bwfpn/NEU-DET-bil
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   num_classes: 6
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   input_size: 200
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   num_workers: 4
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   pin_memory: True
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   epochs: 300
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   batch_size: 16
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   accumulation_steps: 2
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   optimizer: AdamW
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   learning_rate: 0.001
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   weight_decay: 0.0005
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   momentum: 0.93
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   scheduler: CosineAnnealingWarmRestarts
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   T_0: 5
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   T_mult: 2
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   eta_min: 1e-05
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   warmup_epochs: 5
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   warmup_start_factor: 0.1
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   lambda_box: 0.05
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   lambda_obj: 15.0
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   lambda_cls: 0.5
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   label_smoothing: 0.005
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   gradient_clip: 10.0
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   droppath: 0.2
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   ema_decay: 0.9999
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   mixed_precision: True
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   early_stopping_patience: 50
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   augmentation: {'mosaic_prob': 0.7, 'mosaic_disable_epoch': 210, 'mixup_prob': 0.15, 'mixup_alpha': 0.5, 'flip_prob': 0.5, 'gaussian_noise': 0.02, 'gaussian_blur': 5, 'cutout_prob': 0.3, 'cutout_scale': [0.02, 0.1], 'weight_decay': '0.0005,', 'dropout': '0.3,', 'hsv_h': '0.015,', 'hsv_s': '0.7,', 'hsv_v': '0.4,', 'degrees': '10.0,', 'translate': '0.1,', 'scale': '0.5,', 'shear': '2.0,', 'flipud': '0.5,', 'fliplr': '0.5,', 'mosaic': '1.0,', 'mixup': '0.1,', 'depth_multiple': '0.33,', 'width_multiple': '0.5,'}
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   log_interval: 10
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   save_interval: 10
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO -   resume_from: None
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO - 
+============================================================
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO - PHASE 3: Anchor Optimization
+2025-10-25 18:46:56,820 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO - Training Configuration
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   experiment_name: ghostcam_bwfpn_optimized
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   data_dir: /home/daksha/projects/ghostcam-bwfpn/NEU-DET-bil
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   num_classes: 6
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   input_size: 200
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   num_workers: 4
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   pin_memory: True
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   epochs: 300
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   batch_size: 16
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   accumulation_steps: 2
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   optimizer: AdamW
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   learning_rate: 0.001
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   weight_decay: 0.0005
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   momentum: 0.93
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   scheduler: CosineAnnealingWarmRestarts
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   T_0: 5
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   T_mult: 2
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   eta_min: 1e-05
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   warmup_epochs: 5
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   warmup_start_factor: 0.1
+2025-10-25 18:49:12,616 - ghostcam_bwfpn_optimized - INFO -   lambda_box: 0.05
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO -   lambda_obj: 15.0
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO -   lambda_cls: 0.5
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO -   label_smoothing: 0.005
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO -   gradient_clip: 10.0
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO -   droppath: 0.2
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO -   ema_decay: 0.9999
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO -   mixed_precision: True
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO -   early_stopping_patience: 50
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO -   augmentation: {'mosaic_prob': 0.7, 'mosaic_disable_epoch': 210, 'mixup_prob': 0.15, 'mixup_alpha': 0.5, 'flip_prob': 0.5, 'gaussian_noise': 0.02, 'gaussian_blur': 5, 'cutout_prob': 0.3, 'cutout_scale': [0.02, 0.1], 'weight_decay': '0.0005,', 'dropout': '0.3,', 'hsv_h': '0.015,', 'hsv_s': '0.7,', 'hsv_v': '0.4,', 'degrees': '10.0,', 'translate': '0.1,', 'scale': '0.5,', 'shear': '2.0,', 'flipud': '0.5,', 'fliplr': '0.5,', 'mosaic': '1.0,', 'mixup': '0.1,', 'depth_multiple': '0.33,', 'width_multiple': '0.5,'}
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO -   log_interval: 10
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO -   save_interval: 10
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO -   resume_from: None
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO - 
+============================================================
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO - PHASE 3: Anchor Optimization
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO - Optimized anchors will be used for training
+2025-10-25 18:49:12,617 - ghostcam_bwfpn_optimized - INFO - 
+Building model...
+2025-10-25 18:49:12,818 - ghostcam_bwfpn_optimized - INFO - [OK] EMA enabled with decay: 0.9999
+2025-10-25 18:49:12,819 - ghostcam_bwfpn_optimized - INFO - [OK] Total parameters: 3.90M
+2025-10-25 18:49:12,819 - ghostcam_bwfpn_optimized - INFO - [OK] Trainable parameters: 3.90M
+2025-10-25 18:49:12,819 - ghostcam_bwfpn_optimized - INFO - 
+Building datasets...
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO - Training Configuration
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   experiment_name: ghostcam_bwfpn_optimized
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   data_dir: /home/daksha/projects/ghostcam-bwfpn/NEU-DET-bil
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   num_classes: 6
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   input_size: 200
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   num_workers: 4
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   pin_memory: True
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   epochs: 300
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   batch_size: 16
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   accumulation_steps: 2
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   optimizer: AdamW
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   learning_rate: 0.001
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   weight_decay: 0.0005
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   momentum: 0.93
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   scheduler: CosineAnnealingWarmRestarts
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   T_0: 5
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   T_mult: 2
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   eta_min: 1e-05
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   warmup_epochs: 5
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   warmup_start_factor: 0.1
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   lambda_box: 0.05
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   lambda_obj: 15.0
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   lambda_cls: 0.5
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   label_smoothing: 0.005
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   gradient_clip: 10.0
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   droppath: 0.2
+2025-10-25 18:50:16,377 - ghostcam_bwfpn_optimized - INFO -   ema_decay: 0.9999
+2025-10-25 18:50:16,378 - ghostcam_bwfpn_optimized - INFO -   mixed_precision: True
+2025-10-25 18:50:16,378 - ghostcam_bwfpn_optimized - INFO -   early_stopping_patience: 50
+2025-10-25 18:50:16,378 - ghostcam_bwfpn_optimized - INFO -   augmentation: {'mosaic_prob': 0.7, 'mosaic_disable_epoch': 210, 'mixup_prob': 0.15, 'mixup_alpha': 0.5, 'flip_prob': 0.5, 'gaussian_noise': 0.02, 'gaussian_blur': 5, 'cutout_prob': 0.3, 'cutout_scale': [0.02, 0.1], 'weight_decay': '0.0005,', 'dropout': '0.3,', 'hsv_h': '0.015,', 'hsv_s': '0.7,', 'hsv_v': '0.4,', 'degrees': '10.0,', 'translate': '0.1,', 'scale': '0.5,', 'shear': '2.0,', 'flipud': '0.5,', 'fliplr': '0.5,', 'mosaic': '1.0,', 'mixup': '0.1,', 'depth_multiple': '0.33,', 'width_multiple': '0.5,'}
+2025-10-25 18:50:16,378 - ghostcam_bwfpn_optimized - INFO -   log_interval: 10
+2025-10-25 18:50:16,378 - ghostcam_bwfpn_optimized - INFO -   save_interval: 10
+2025-10-25 18:50:16,378 - ghostcam_bwfpn_optimized - INFO -   resume_from: None
+2025-10-25 18:50:16,378 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 18:50:16,378 - ghostcam_bwfpn_optimized - INFO - 
+============================================================
+2025-10-25 18:50:16,378 - ghostcam_bwfpn_optimized - INFO - PHASE 3: Anchor Optimization
+2025-10-25 18:50:16,378 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 18:50:16,378 - ghostcam_bwfpn_optimized - INFO - Optimized anchors will be used for training
+2025-10-25 18:50:16,378 - ghostcam_bwfpn_optimized - INFO - 
+Building model...
+2025-10-25 18:50:16,549 - ghostcam_bwfpn_optimized - INFO - [OK] EMA enabled with decay: 0.9999
+2025-10-25 18:50:16,550 - ghostcam_bwfpn_optimized - INFO - [OK] Total parameters: 3.90M
+2025-10-25 18:50:16,550 - ghostcam_bwfpn_optimized - INFO - [OK] Trainable parameters: 3.90M
+2025-10-25 18:50:16,550 - ghostcam_bwfpn_optimized - INFO - 
+Building datasets...
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO - Training Configuration
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   experiment_name: ghostcam_bwfpn_optimized
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   data_dir: /home/daksha/projects/ghostcam-bwfpn/NEU-DET-bil
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   num_classes: 6
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   input_size: 200
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   num_workers: 4
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   pin_memory: True
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   epochs: 300
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   batch_size: 16
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   accumulation_steps: 2
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   optimizer: AdamW
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   learning_rate: 0.001
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   weight_decay: 0.0005
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   momentum: 0.93
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   scheduler: CosineAnnealingWarmRestarts
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   T_0: 5
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   T_mult: 2
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   eta_min: 1e-05
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   warmup_epochs: 5
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   warmup_start_factor: 0.1
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   lambda_box: 0.05
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   lambda_obj: 15.0
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   lambda_cls: 0.5
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   label_smoothing: 0.005
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   gradient_clip: 10.0
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   droppath: 0.2
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   ema_decay: 0.9999
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   mixed_precision: True
+2025-10-25 18:51:28,839 - ghostcam_bwfpn_optimized - INFO -   early_stopping_patience: 50
+2025-10-25 18:51:28,840 - ghostcam_bwfpn_optimized - INFO -   augmentation: {'mosaic_prob': 0.7, 'mosaic_disable_epoch': 210, 'mixup_prob': 0.15, 'mixup_alpha': 0.5, 'flip_prob': 0.5, 'gaussian_noise': 0.02, 'gaussian_blur': 5, 'cutout_prob': 0.3, 'cutout_scale': [0.02, 0.1], 'weight_decay': '0.0005,', 'dropout': '0.3,', 'hsv_h': '0.015,', 'hsv_s': '0.7,', 'hsv_v': '0.4,', 'degrees': '10.0,', 'translate': '0.1,', 'scale': '0.5,', 'shear': '2.0,', 'flipud': '0.5,', 'fliplr': '0.5,', 'mosaic': '1.0,', 'mixup': '0.1,', 'depth_multiple': '0.33,', 'width_multiple': '0.5,'}
+2025-10-25 18:51:28,840 - ghostcam_bwfpn_optimized - INFO -   log_interval: 10
+2025-10-25 18:51:28,840 - ghostcam_bwfpn_optimized - INFO -   save_interval: 10
+2025-10-25 18:51:28,840 - ghostcam_bwfpn_optimized - INFO -   resume_from: None
+2025-10-25 18:51:28,840 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 18:51:28,840 - ghostcam_bwfpn_optimized - INFO - 
+============================================================
+2025-10-25 18:51:28,840 - ghostcam_bwfpn_optimized - INFO - PHASE 3: Anchor Optimization
+2025-10-25 18:51:28,840 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 18:51:28,840 - ghostcam_bwfpn_optimized - INFO - Optimized anchors will be used for training
+2025-10-25 18:51:28,840 - ghostcam_bwfpn_optimized - INFO - 
+Building model...
+2025-10-25 18:51:29,005 - ghostcam_bwfpn_optimized - INFO - [OK] EMA enabled with decay: 0.9999
+2025-10-25 18:51:29,006 - ghostcam_bwfpn_optimized - INFO - [OK] Total parameters: 3.90M
+2025-10-25 18:51:29,006 - ghostcam_bwfpn_optimized - INFO - [OK] Trainable parameters: 3.90M
+2025-10-25 18:51:29,006 - ghostcam_bwfpn_optimized - INFO - 
+Building datasets...
+2025-10-25 19:00:11,069 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:00:11,069 - ghostcam_bwfpn_optimized - INFO - Training Configuration
+2025-10-25 19:00:11,069 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:00:11,069 - ghostcam_bwfpn_optimized - INFO -   experiment_name: ghostcam_bwfpn_optimized
+2025-10-25 19:00:11,069 - ghostcam_bwfpn_optimized - INFO -   data_dir: /home/daksha/projects/ghostcam-bwfpn/NEU-DET-bil
+2025-10-25 19:00:11,069 - ghostcam_bwfpn_optimized - INFO -   num_classes: 6
+2025-10-25 19:00:11,069 - ghostcam_bwfpn_optimized - INFO -   input_size: 200
+2025-10-25 19:00:11,069 - ghostcam_bwfpn_optimized - INFO -   num_workers: 4
+2025-10-25 19:00:11,069 - ghostcam_bwfpn_optimized - INFO -   pin_memory: True
+2025-10-25 19:00:11,069 - ghostcam_bwfpn_optimized - INFO -   epochs: 300
+2025-10-25 19:00:11,069 - ghostcam_bwfpn_optimized - INFO -   batch_size: 16
+2025-10-25 19:00:11,069 - ghostcam_bwfpn_optimized - INFO -   accumulation_steps: 2
+2025-10-25 19:00:11,069 - ghostcam_bwfpn_optimized - INFO -   optimizer: AdamW
+2025-10-25 19:00:11,069 - ghostcam_bwfpn_optimized - INFO -   learning_rate: 0.001
+2025-10-25 19:00:11,069 - ghostcam_bwfpn_optimized - INFO -   weight_decay: 0.0005
+2025-10-25 19:00:11,069 - ghostcam_bwfpn_optimized - INFO -   momentum: 0.93
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   scheduler: CosineAnnealingWarmRestarts
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   T_0: 5
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   T_mult: 2
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   eta_min: 1e-05
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   warmup_epochs: 5
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   warmup_start_factor: 0.1
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   lambda_box: 0.05
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   lambda_obj: 15.0
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   lambda_cls: 0.5
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   label_smoothing: 0.005
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   gradient_clip: 10.0
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   droppath: 0.2
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   ema_decay: 0.9999
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   mixed_precision: True
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   early_stopping_patience: 50
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   augmentation: {'mosaic_prob': 0.7, 'mosaic_disable_epoch': 210, 'mixup_prob': 0.15, 'mixup_alpha': 0.5, 'flip_prob': 0.5, 'gaussian_noise': 0.02, 'gaussian_blur': 5, 'cutout_prob': 0.3, 'cutout_scale': [0.02, 0.1], 'weight_decay': '0.0005,', 'dropout': '0.3,', 'hsv_h': '0.015,', 'hsv_s': '0.7,', 'hsv_v': '0.4,', 'degrees': '10.0,', 'translate': '0.1,', 'scale': '0.5,', 'shear': '2.0,', 'flipud': '0.5,', 'fliplr': '0.5,', 'mosaic': '1.0,', 'mixup': '0.1,', 'depth_multiple': '0.33,', 'width_multiple': '0.5,'}
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   log_interval: 10
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   save_interval: 10
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO -   resume_from: None
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO - 
+============================================================
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO - PHASE 3: Anchor Optimization
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO - Optimized anchors will be used for training
+2025-10-25 19:00:11,070 - ghostcam_bwfpn_optimized - INFO - 
+Building model...
+2025-10-25 19:00:11,239 - ghostcam_bwfpn_optimized - INFO - [OK] EMA enabled with decay: 0.9999
+2025-10-25 19:00:11,240 - ghostcam_bwfpn_optimized - INFO - [OK] Total parameters: 3.90M
+2025-10-25 19:00:11,240 - ghostcam_bwfpn_optimized - INFO - [OK] Trainable parameters: 3.90M
+2025-10-25 19:00:11,240 - ghostcam_bwfpn_optimized - INFO - 
+Building datasets...
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO - Training Configuration
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   experiment_name: ghostcam_bwfpn_optimized
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   data_dir: /home/daksha/projects/ghostcam-bwfpn/NEU-DET-bil
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   num_classes: 6
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   input_size: 200
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   num_workers: 4
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   pin_memory: True
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   epochs: 300
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   batch_size: 16
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   accumulation_steps: 2
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   optimizer: AdamW
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   learning_rate: 0.001
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   weight_decay: 0.0005
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   momentum: 0.93
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   scheduler: CosineAnnealingWarmRestarts
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   T_0: 5
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   T_mult: 2
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   eta_min: 1e-05
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   warmup_epochs: 5
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   warmup_start_factor: 0.1
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   lambda_box: 0.05
+2025-10-25 19:04:54,084 - ghostcam_bwfpn_optimized - INFO -   lambda_obj: 15.0
+2025-10-25 19:04:54,085 - ghostcam_bwfpn_optimized - INFO -   lambda_cls: 0.5
+2025-10-25 19:04:54,085 - ghostcam_bwfpn_optimized - INFO -   label_smoothing: 0.005
+2025-10-25 19:04:54,085 - ghostcam_bwfpn_optimized - INFO -   gradient_clip: 10.0
+2025-10-25 19:04:54,085 - ghostcam_bwfpn_optimized - INFO -   droppath: 0.2
+2025-10-25 19:04:54,085 - ghostcam_bwfpn_optimized - INFO -   ema_decay: 0.9999
+2025-10-25 19:04:54,085 - ghostcam_bwfpn_optimized - INFO -   mixed_precision: True
+2025-10-25 19:04:54,085 - ghostcam_bwfpn_optimized - INFO -   early_stopping_patience: 50
+2025-10-25 19:04:54,085 - ghostcam_bwfpn_optimized - INFO -   augmentation: {'mosaic_prob': 0.7, 'mosaic_disable_epoch': 210, 'mixup_prob': 0.15, 'mixup_alpha': 0.5, 'flip_prob': 0.5, 'gaussian_noise': 0.02, 'gaussian_blur': 5, 'cutout_prob': 0.3, 'cutout_scale': [0.02, 0.1], 'weight_decay': '0.0005,', 'dropout': '0.3,', 'hsv_h': '0.015,', 'hsv_s': '0.7,', 'hsv_v': '0.4,', 'degrees': '10.0,', 'translate': '0.1,', 'scale': '0.5,', 'shear': '2.0,', 'flipud': '0.5,', 'fliplr': '0.5,', 'mosaic': '1.0,', 'mixup': '0.1,', 'depth_multiple': '0.33,', 'width_multiple': '0.5,'}
+2025-10-25 19:04:54,085 - ghostcam_bwfpn_optimized - INFO -   log_interval: 10
+2025-10-25 19:04:54,085 - ghostcam_bwfpn_optimized - INFO -   save_interval: 10
+2025-10-25 19:04:54,085 - ghostcam_bwfpn_optimized - INFO -   resume_from: None
+2025-10-25 19:04:54,085 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:04:54,085 - ghostcam_bwfpn_optimized - INFO - 
+============================================================
+2025-10-25 19:04:54,085 - ghostcam_bwfpn_optimized - INFO - PHASE 3: Anchor Optimization
+2025-10-25 19:04:54,085 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:04:54,085 - ghostcam_bwfpn_optimized - INFO - Optimized anchors will be used for training
+2025-10-25 19:04:54,085 - ghostcam_bwfpn_optimized - INFO - 
+Building model...
+2025-10-25 19:04:54,253 - ghostcam_bwfpn_optimized - INFO - [OK] EMA enabled with decay: 0.9999
+2025-10-25 19:04:54,254 - ghostcam_bwfpn_optimized - INFO - [OK] Total parameters: 3.90M
+2025-10-25 19:04:54,254 - ghostcam_bwfpn_optimized - INFO - [OK] Trainable parameters: 3.90M
+2025-10-25 19:04:54,254 - ghostcam_bwfpn_optimized - INFO - 
+Building datasets...
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO - Training Configuration
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   experiment_name: ghostcam_bwfpn_optimized
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   data_dir: /home/daksha/projects/ghostcam-bwfpn/NEU-DET-bil
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   num_classes: 6
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   input_size: 200
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   num_workers: 4
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   pin_memory: True
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   epochs: 300
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   batch_size: 16
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   accumulation_steps: 2
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   optimizer: AdamW
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   learning_rate: 0.001
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   weight_decay: 0.0005
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   momentum: 0.93
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   scheduler: CosineAnnealingWarmRestarts
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   T_0: 5
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   T_mult: 2
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   eta_min: 1e-05
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   warmup_epochs: 5
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   warmup_start_factor: 0.1
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   lambda_box: 0.05
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   lambda_obj: 15.0
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   lambda_cls: 0.5
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   label_smoothing: 0.005
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   gradient_clip: 10.0
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   droppath: 0.2
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   ema_decay: 0.9999
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   mixed_precision: True
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   early_stopping_patience: 50
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   augmentation: {'mosaic_prob': 0.7, 'mosaic_disable_epoch': 210, 'mixup_prob': 0.15, 'mixup_alpha': 0.5, 'flip_prob': 0.5, 'gaussian_noise': 0.02, 'gaussian_blur': 5, 'cutout_prob': 0.3, 'cutout_scale': [0.02, 0.1], 'weight_decay': '0.0005,', 'dropout': '0.3,', 'hsv_h': '0.015,', 'hsv_s': '0.7,', 'hsv_v': '0.4,', 'degrees': '10.0,', 'translate': '0.1,', 'scale': '0.5,', 'shear': '2.0,', 'flipud': '0.5,', 'fliplr': '0.5,', 'mosaic': '1.0,', 'mixup': '0.1,', 'depth_multiple': '0.33,', 'width_multiple': '0.5,'}
+2025-10-25 19:08:10,738 - ghostcam_bwfpn_optimized - INFO -   log_interval: 10
+2025-10-25 19:08:10,739 - ghostcam_bwfpn_optimized - INFO -   save_interval: 10
+2025-10-25 19:08:10,739 - ghostcam_bwfpn_optimized - INFO -   resume_from: None
+2025-10-25 19:08:10,739 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:08:10,739 - ghostcam_bwfpn_optimized - INFO - 
+============================================================
+2025-10-25 19:08:10,739 - ghostcam_bwfpn_optimized - INFO - PHASE 3: Anchor Optimization
+2025-10-25 19:08:10,739 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:08:10,739 - ghostcam_bwfpn_optimized - INFO - Optimized anchors will be used for training
+2025-10-25 19:08:10,739 - ghostcam_bwfpn_optimized - INFO - 
+Building model...
+2025-10-25 19:08:10,905 - ghostcam_bwfpn_optimized - INFO - [OK] EMA enabled with decay: 0.9999
+2025-10-25 19:08:10,906 - ghostcam_bwfpn_optimized - INFO - [OK] Total parameters: 3.90M
+2025-10-25 19:08:10,906 - ghostcam_bwfpn_optimized - INFO - [OK] Trainable parameters: 3.90M
+2025-10-25 19:08:10,906 - ghostcam_bwfpn_optimized - INFO - 
+Building datasets...
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO - Training Configuration
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   experiment_name: ghostcam_bwfpn_optimized
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   data_dir: /home/daksha/project3/ghostcam-bwfpn/NEU-DET-bil
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   num_classes: 6
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   input_size: 200
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   num_workers: 4
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   pin_memory: True
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   epochs: 300
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   batch_size: 16
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   accumulation_steps: 2
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   optimizer: AdamW
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   learning_rate: 0.001
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   weight_decay: 0.0005
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   momentum: 0.93
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   scheduler: CosineAnnealingWarmRestarts
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   T_0: 5
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   T_mult: 2
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   eta_min: 1e-05
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   warmup_epochs: 5
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   warmup_start_factor: 0.1
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   lambda_box: 0.05
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   lambda_obj: 15.0
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   lambda_cls: 0.5
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   label_smoothing: 0.005
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   gradient_clip: 10.0
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   droppath: 0.2
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   ema_decay: 0.9999
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   mixed_precision: True
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   early_stopping_patience: 50
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   augmentation: {'mosaic_prob': 0.7, 'mosaic_disable_epoch': 210, 'mixup_prob': 0.15, 'mixup_alpha': 0.5, 'flip_prob': 0.5, 'gaussian_noise': 0.02, 'gaussian_blur': 5, 'cutout_prob': 0.3, 'cutout_scale': [0.02, 0.1], 'weight_decay': '0.0005,', 'dropout': '0.3,', 'hsv_h': '0.015,', 'hsv_s': '0.7,', 'hsv_v': '0.4,', 'degrees': '10.0,', 'translate': '0.1,', 'scale': '0.5,', 'shear': '2.0,', 'flipud': '0.5,', 'fliplr': '0.5,', 'mosaic': '1.0,', 'mixup': '0.1,', 'depth_multiple': '0.33,', 'width_multiple': '0.5,'}
+2025-10-25 19:14:34,463 - ghostcam_bwfpn_optimized - INFO -   log_interval: 10
+2025-10-25 19:14:34,464 - ghostcam_bwfpn_optimized - INFO -   save_interval: 10
+2025-10-25 19:14:34,464 - ghostcam_bwfpn_optimized - INFO -   resume_from: None
+2025-10-25 19:14:34,464 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:14:34,464 - ghostcam_bwfpn_optimized - INFO - 
+============================================================
+2025-10-25 19:14:34,464 - ghostcam_bwfpn_optimized - INFO - PHASE 3: Anchor Optimization
+2025-10-25 19:14:34,464 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:14:34,464 - ghostcam_bwfpn_optimized - INFO - Optimized anchors will be used for training
+2025-10-25 19:14:34,464 - ghostcam_bwfpn_optimized - INFO - 
+Building model...
+2025-10-25 19:14:34,630 - ghostcam_bwfpn_optimized - INFO - [OK] EMA enabled with decay: 0.9999
+2025-10-25 19:14:34,631 - ghostcam_bwfpn_optimized - INFO - [OK] Total parameters: 3.90M
+2025-10-25 19:14:34,631 - ghostcam_bwfpn_optimized - INFO - [OK] Trainable parameters: 3.90M
+2025-10-25 19:14:34,631 - ghostcam_bwfpn_optimized - INFO - 
+Building datasets...
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO - Training Configuration
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   experiment_name: ghostcam_bwfpn_optimized
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   data_dir: /home/daksha/project3/ghostcam-bwfpn/NEU-DET-bil
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   num_classes: 6
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   input_size: 200
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   num_workers: 4
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   pin_memory: True
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   epochs: 300
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   batch_size: 16
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   accumulation_steps: 2
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   optimizer: AdamW
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   learning_rate: 0.001
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   weight_decay: 0.0005
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   momentum: 0.93
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   scheduler: CosineAnnealingWarmRestarts
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   T_0: 5
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   T_mult: 2
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   eta_min: 1e-05
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   warmup_epochs: 5
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   warmup_start_factor: 0.1
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   lambda_box: 0.05
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   lambda_obj: 15.0
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   lambda_cls: 0.5
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   label_smoothing: 0.005
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   gradient_clip: 10.0
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   droppath: 0.2
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   ema_decay: 0.9999
+2025-10-25 19:15:33,905 - ghostcam_bwfpn_optimized - INFO -   mixed_precision: True
+2025-10-25 19:15:33,906 - ghostcam_bwfpn_optimized - INFO -   early_stopping_patience: 50
+2025-10-25 19:15:33,906 - ghostcam_bwfpn_optimized - INFO -   augmentation: {'mosaic_prob': 0.7, 'mosaic_disable_epoch': 210, 'mixup_prob': 0.15, 'mixup_alpha': 0.5, 'flip_prob': 0.5, 'gaussian_noise': 0.02, 'gaussian_blur': 5, 'cutout_prob': 0.3, 'cutout_scale': [0.02, 0.1], 'weight_decay': '0.0005,', 'dropout': '0.3,', 'hsv_h': '0.015,', 'hsv_s': '0.7,', 'hsv_v': '0.4,', 'degrees': '10.0,', 'translate': '0.1,', 'scale': '0.5,', 'shear': '2.0,', 'flipud': '0.5,', 'fliplr': '0.5,', 'mosaic': '1.0,', 'mixup': '0.1,', 'depth_multiple': '0.33,', 'width_multiple': '0.5,'}
+2025-10-25 19:15:33,906 - ghostcam_bwfpn_optimized - INFO -   log_interval: 10
+2025-10-25 19:15:33,906 - ghostcam_bwfpn_optimized - INFO -   save_interval: 10
+2025-10-25 19:15:33,906 - ghostcam_bwfpn_optimized - INFO -   resume_from: None
+2025-10-25 19:15:33,906 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:15:33,906 - ghostcam_bwfpn_optimized - INFO - 
+============================================================
+2025-10-25 19:15:33,906 - ghostcam_bwfpn_optimized - INFO - PHASE 3: Anchor Optimization
+2025-10-25 19:15:33,906 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:15:33,906 - ghostcam_bwfpn_optimized - INFO - Optimized anchors will be used for training
+2025-10-25 19:15:33,906 - ghostcam_bwfpn_optimized - INFO - 
+Building model...
+2025-10-25 19:15:34,072 - ghostcam_bwfpn_optimized - INFO - [OK] EMA enabled with decay: 0.9999
+2025-10-25 19:15:34,073 - ghostcam_bwfpn_optimized - INFO - [OK] Total parameters: 3.90M
+2025-10-25 19:15:34,073 - ghostcam_bwfpn_optimized - INFO - [OK] Trainable parameters: 3.90M
+2025-10-25 19:15:34,073 - ghostcam_bwfpn_optimized - INFO - 
+Building datasets...
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO - Training Configuration
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   experiment_name: ghostcam_bwfpn_optimized
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   data_dir: /home/daksha/project3/ghostcam-bwfpn/NEU-DET-bil
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   num_classes: 6
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   input_size: 200
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   num_workers: 4
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   pin_memory: True
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   epochs: 300
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   batch_size: 16
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   accumulation_steps: 2
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   optimizer: AdamW
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   learning_rate: 0.001
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   weight_decay: 0.0005
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   momentum: 0.93
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   scheduler: CosineAnnealingWarmRestarts
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   T_0: 5
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   T_mult: 2
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   eta_min: 1e-05
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   warmup_epochs: 5
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   warmup_start_factor: 0.1
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   lambda_box: 0.05
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   lambda_obj: 15.0
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   lambda_cls: 0.5
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   label_smoothing: 0.005
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   gradient_clip: 10.0
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   droppath: 0.2
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   ema_decay: 0.9999
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   mixed_precision: True
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   early_stopping_patience: 50
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   augmentation: {'mosaic_prob': 0.7, 'mosaic_disable_epoch': 210, 'mixup_prob': 0.15, 'mixup_alpha': 0.5, 'flip_prob': 0.5, 'gaussian_noise': 0.02, 'gaussian_blur': 5, 'cutout_prob': 0.3, 'cutout_scale': [0.02, 0.1], 'weight_decay': '0.0005,', 'dropout': '0.3,', 'hsv_h': '0.015,', 'hsv_s': '0.7,', 'hsv_v': '0.4,', 'degrees': '10.0,', 'translate': '0.1,', 'scale': '0.5,', 'shear': '2.0,', 'flipud': '0.5,', 'fliplr': '0.5,', 'mosaic': '1.0,', 'mixup': '0.1,', 'depth_multiple': '0.33,', 'width_multiple': '0.5,'}
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   log_interval: 10
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   save_interval: 10
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO -   resume_from: None
+2025-10-25 19:16:42,818 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:16:42,819 - ghostcam_bwfpn_optimized - INFO - 
+============================================================
+2025-10-25 19:16:42,819 - ghostcam_bwfpn_optimized - INFO - PHASE 3: Anchor Optimization
+2025-10-25 19:16:42,819 - ghostcam_bwfpn_optimized - INFO - ============================================================
+2025-10-25 19:16:42,819 - ghostcam_bwfpn_optimized - INFO - Optimized anchors will be used for training
+2025-10-25 19:16:42,819 - ghostcam_bwfpn_optimized - INFO - 
+Building model...
+2025-10-25 19:16:42,986 - ghostcam_bwfpn_optimized - INFO - [OK] EMA enabled with decay: 0.9999
+2025-10-25 19:16:42,987 - ghostcam_bwfpn_optimized - INFO - [OK] Total parameters: 3.90M
+2025-10-25 19:16:42,987 - ghostcam_bwfpn_optimized - INFO - [OK] Trainable parameters: 3.90M
+2025-10-25 19:16:42,987 - ghostcam_bwfpn_optimized - INFO - 
+Building datasets...

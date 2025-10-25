@@ -1,0 +1,92 @@
+# File: configs/train_config.yaml
+# Complete training configuration with all optimizations
+
+# Experiment
+experiment_name: 'ghostcam_bwfpn_optimized'
+
+# Dataset
+data_dir: '/home/daksha/project3/ghostcam-bwfpn/NEU-DET-bil'
+num_classes: 6
+input_size: 200
+num_workers: 4
+pin_memory: true
+
+# Training
+epochs: 300
+batch_size: 16
+accumulation_steps: 2
+
+# Optimizer
+optimizer: 'AdamW'
+learning_rate: 0.001
+weight_decay: 0.0005
+momentum: 0.93
+
+# Learning rate scheduler
+scheduler: 'CosineAnnealingWarmRestarts'
+T_0: 5
+T_mult: 2
+eta_min: 0.00001
+
+# Warmup (Phase 4.3)
+warmup_epochs: 5
+warmup_start_factor: 0.1
+
+# Loss weights (Phase 2 - Higher objectness weight)
+lambda_box: 0.05
+lambda_obj: 15.0  # Increased from 1.0 to reduce false positives
+lambda_cls: 0.5
+label_smoothing: 0.005
+
+# Regularization
+gradient_clip: 10.0
+droppath: 0.2
+
+# EMA
+ema_decay: 0.9999
+
+# Mixed precision
+mixed_precision: true
+
+# Early stopping
+early_stopping_patience: 50
+
+# Augmentation
+augmentation:
+  mosaic_prob: 0.7
+  mosaic_disable_epoch: 210
+  mixup_prob: 0.15
+  mixup_alpha: 0.5
+  flip_prob: 0.5
+  gaussian_noise: 0.02
+  gaussian_blur: 5
+  cutout_prob: 0.3
+  cutout_scale: [0.02, 0.1]
+
+
+  weight_decay: 0.0005,  # or 0.001
+  dropout: 0.3,  # Add dropout layers if not present
+    
+    # Data augmentation
+  hsv_h: 0.015,
+  hsv_s: 0.7,
+  hsv_v: 0.4,
+  degrees: 10.0,
+  translate: 0.1,
+  scale: 0.5,
+  shear: 2.0,
+  flipud: 0.5,
+  fliplr: 0.5,
+  mosaic: 1.0,
+  mixup: 0.1,
+    
+    # Reduce model capacity if needed
+  depth_multiple: 0.33,  # Make model smaller
+  width_multiple: 0.5,
+
+# Logging
+log_interval: 10
+save_interval: 10
+
+# Resume training
+resume_from: null
